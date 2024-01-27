@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react"
+import { NavLink } from "react-router-dom"
 import MenuLink from "./MenuLink"
 import DropdownLink from "./DropdownLink"
+import { GiBiceps } from "react-icons/gi"
 import * as MdIcons from "react-icons/md"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { IoCloseSharp } from "react-icons/io5"
@@ -70,7 +72,7 @@ const Navbar = () => {
     <div className="w-full font-firacode">
       <nav
         ref={navRef}
-        className={`z-50 w-full h-20 fixed top-0 left-0 bg-slate-500/20 flex items-center justify-between px-4 md:px-10 ${
+        className={`z-50 w-full h-20 fixed top-0 left-0 bg-green-500/20 flex items-center justify-between pr-4 md:pr-10 ${
           isScrolled
             ? "bg-slate-100 dark:bg-slate-950 shadow-lg shadow-green-500 duration-300 ease-in-out"
             : ""
@@ -78,6 +80,10 @@ const Navbar = () => {
       >
         {/* Navigation Links */}
         <ul className="flex gap-6 items-center">
+          <NavLink to="/">
+            <GiBiceps className="text-7xl" />
+          </NavLink>
+
           {navLinks.map((item, index) => (
             <li key={index}>
               <MenuLink to={item.path}>{item.label}</MenuLink>
