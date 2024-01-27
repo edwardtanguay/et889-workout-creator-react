@@ -1,8 +1,3 @@
-# React + Vite
+# Workout Creator - FitnessApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Purpose of this App is to let you create your own Gym Workout Routine by picking from a solid collection of effective exercises and to track the progress you are making in the gym with it.**
