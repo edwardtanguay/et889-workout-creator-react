@@ -74,7 +74,7 @@ const Navbar = () => {
         ref={navRef}
         className={`z-50 w-full h-20 fixed top-0 left-0 bg-green-500/20 flex items-center justify-between pr-4 md:pr-10 ${
           isScrolled
-            ? "bg-slate-100 dark:bg-slate-950 shadow-lg shadow-green-500 duration-300 ease-in-out"
+            ? "bg-slate-200 dark:bg-slate-950 shadow-lg shadow-green-500 duration-300 ease-in-out"
             : ""
         }`}
       >
